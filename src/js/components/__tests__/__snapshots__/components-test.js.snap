@@ -2741,11 +2741,11 @@ function",
       Object {
         "description": "Options can be either a string or an object. If an object is used, use
       children callback in order to render anything based on the current item.",
-        "format": "[
-  string
-  element
-  object
-]",
+        "format": "string
+element
+[string]
+[element]
+[object]",
         "name": "options",
         "required": true,
       },

@@ -104,13 +104,13 @@ export const doc = Select => {
       `Function that will be called when the user types in the search input.
       If this property is not provided, no search field will be rendered.`,
     ),
-    options: PropTypes.arrayOf(
-      PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.element,
-        PropTypes.object,
-      ]),
-    ).description(
+    options: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.element,
+      PropTypes.arrayOf(PropTypes.string),
+      PropTypes.arrayOf(PropTypes.element),
+      PropTypes.arrayOf(PropTypes.object),
+    ]).description(
       `Options can be either a string or an object. If an object is used, use
       children callback in order to render anything based on the current item.`,
     ).isRequired,
