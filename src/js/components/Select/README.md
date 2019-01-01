@@ -285,8 +285,6 @@ Required. Options can be either a string or an object. If an object is used, use
       children callback in order to render anything based on the current item.
 
 ```
-string
-element
 [string]
 [element]
 [object]

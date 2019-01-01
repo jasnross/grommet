@@ -105,8 +105,6 @@ export const doc = Select => {
       If this property is not provided, no search field will be rendered.`,
     ),
     options: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.element,
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.element),
       PropTypes.arrayOf(PropTypes.object),
